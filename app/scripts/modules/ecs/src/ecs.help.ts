@@ -34,6 +34,8 @@ const helpContents: { [key: string]: string } = {
     '<p>awsvpc is the only networking mode that allows you to use Elastic Network Interfaces (ENI).  The default value converts to Bridge on Linux, and NAT on Windows.</p>',
   'ecs.subnet': '<p>The subnet group on which your server group will be deployed.</p>',
   'ecs.securityGroups': '<p>The security group(s) name(s) your containers are deployed with.</p>',
+  'ecs.environmentVariables':
+    '<p>The environment variable(s) your container are deployed with. SERVER_GROUP, CLOUD_STACK and CLOUD_DETAIL environment variables are used during deployment to identify the task and cannot be set here.</p>',
 };
 
 Object.keys(helpContents).forEach(key => HelpContentsRegistry.register(key, helpContents[key]));

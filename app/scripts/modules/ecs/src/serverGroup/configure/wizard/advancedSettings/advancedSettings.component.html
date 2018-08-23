@@ -43,4 +43,12 @@
       <!-- TODO - implement handling of custom placement strategies and constraints -->
     </div>
   </div>
+  <!-- Environment variables -->
+  <div class="form-group">
+    <div class="col-md-5 sm-label-right">
+      <b>Environment Variables (optional)</b>
+      <help-field key="ecs.environmentVariables"></help-field>
+    </div>
+    <map-editor model="$ctrl.command.environmentVariables" allow-empty="true"></map-editor>
+  </div>
 </div>
